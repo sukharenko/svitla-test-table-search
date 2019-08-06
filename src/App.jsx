@@ -37,16 +37,40 @@ class App extends Component {
     const { t, contactListLoaded, contactList } = this.props;
     return (
       <Container>
-        <h2>{t('Welcome to React.js')}</h2>
+        <h2>
+          {t('Welcome to React.js')}
+          {t('Ukraine')}
+        </h2>
         <div className="lang-button">
-          <button type="button" className="btn btn-sm btn-primary" onClick={() => this.changeLanguage('en')}>
-            🇺🇸 English
+          <button
+            type="button"
+            className="btn btn-sm btn-primary"
+            onClick={() => this.changeLanguage('en')}
+          >
+            <span role="img" aria-label="English">
+              🇺🇸
+            </span>
+            English
           </button>
-          <button type="button" className="btn btn-sm btn-primary" onClick={() => this.changeLanguage('ru')}>
-            🇷🇺 Русский
+          <button
+            type="button"
+            className="btn btn-sm btn-primary"
+            onClick={() => this.changeLanguage('ru')}
+          >
+            <span role="img" aria-label="Russian">
+              🇷🇺
+            </span>
+            Русский
           </button>
-          <button type="button" className="btn btn-sm btn-primary" onClick={() => this.changeLanguage('uk')}>
-            🇺🇦 Українська
+          <button
+            type="button"
+            className="btn btn-sm btn-primary"
+            onClick={() => this.changeLanguage('uk')}
+          >
+            <span role="img" aria-label="English">
+              🇺🇦
+            </span>
+            Українська
           </button>
         </div>
         {contactListLoaded && (

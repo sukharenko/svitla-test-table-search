@@ -9,17 +9,19 @@ i18n
     resources: {
       en: {
         translations: {
-          'Welcome to React.js': 'Welcome to React.js',
+          'Welcome to React.js': 'Welcome to React.js!',
         },
       },
       ru: {
         translations: {
           'Welcome to React.js': 'Добро пожаловать в React!',
+          Ukraine: 'Украина',
         },
       },
       uk: {
         translations: {
           'Welcome to React.js': 'Ласкаво просимо в React!',
+          Ukraine: 'Україна',
         },
       },
     },
